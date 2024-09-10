@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Aesthetic Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkTy3FkeP6vXtZ5kdj0+8HNf5VqBJqQmHllscWQ6W+CL1H6CaxDgY/OkCjoAFx0M1pEhKpgF6CqkIrhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1>MyWebsite</h1>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Creating beautiful and functional web experiences.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>Brief description of Project One.</p>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>Brief description of Project Two.</p>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>Brief description of Project Three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> email@example.com</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetID = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetID);
+                window.scrollTo({
+                    top: targetSection.offsetTop - 70, // Adjust for header height
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
